@@ -1,4 +1,4 @@
-#include <SoftwareSerial.h> // Use have to install SoftwareSerial library first
+#include <SoftwareSerial.h> // Use have to install SoftwareSerial library first https://www.arduino.cc/en/Tutorial/SoftwareSerialExample
 static const int RXPin = 8, TXPin = 9;
 SoftwareSerial RS485_Serial(RXPin, TXPin); // Use SoftwareSerial
 
