@@ -1,8 +1,8 @@
-#include <SoftwareSerial.h>
+#include <SoftwareSerial.h> // Use have to install SoftwareSerial library first
 static const int RXPin = 8, TXPin = 9;
-SoftwareSerial RS485_Serial(RXPin, TXPin);
+SoftwareSerial RS485_Serial(RXPin, TXPin); // Use SoftwareSerial
 
-const byte dirPin = 4;
+const byte dirPin = 4; // For control direction (Logic High for send data , Logic Low for receive data)
 
 void setup() {
   Serial.begin(9600);
