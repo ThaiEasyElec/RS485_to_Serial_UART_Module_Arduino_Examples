@@ -1,8 +1,8 @@
-const byte dirPin = 4;
+const byte dirPin = 4; // For control direction (Logic High for send data , Logic Low for receive data)
 
 void setup() {
   Serial.begin(9600);
-  Serial2.begin(9600);
+  Serial2.begin(9600); // Use Serial2 (TX2 >> D16 , RX2 >> D17)
   pinMode(dirPin, OUTPUT);
   digitalWrite(dirPin,LOW);
 }
